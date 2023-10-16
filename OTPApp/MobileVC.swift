@@ -15,6 +15,7 @@ class MobileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("MobileVC VDL")
 
         // Do any additional setup after loading the view.
     }
