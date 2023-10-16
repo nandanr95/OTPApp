@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ixm-kM-nhe">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OTPApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Synchronoss" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5af-HP-VJG">
+                                <rect key="frame" x="32" y="203" width="329" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-X1-RD6">
+                                <rect key="frame" x="143" y="406.33333333333331" width="107" height="39.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVq-DU-mEo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="a7j-X1-RD6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BpX-bl-Ahr"/>
+                            <constraint firstItem="5af-HP-VJG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="CGg-aV-vc0"/>
+                            <constraint firstItem="a7j-X1-RD6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USR-97-yI2"/>
+                            <constraint firstItem="5af-HP-VJG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fUL-yp-Jix"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5af-HP-VJG" secondAttribute="trailing" constant="32" id="szg-HH-ngA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KtU-KP-Xkv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.36641221374043" y="3.5211267605633805"/>
+        </scene>
+        <!--MobileVC-->
+        <scene sceneID="1fg-Tx-GQx">
+            <objects>
+                <viewController storyboardIdentifier="mobilevc" id="NyM-Fk-oXW" customClass="MobileVC" customModule="OTPApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e6b-gg-Yum">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Registered Mobile No" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91t-Ah-Ypv">
+                                <rect key="frame" x="80" y="159" width="233" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10 digit mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-Fo-KwJ">
+                                <rect key="frame" x="60" y="269" width="273" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjo-2j-4Wg">
+                                <rect key="frame" x="100" y="353" width="193" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Send OTP">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="otpButton:" destination="NyM-Fk-oXW" eventType="touchUpInside" id="c0s-xS-f4J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hX-a0-GU5">
+                                <rect key="frame" x="153" y="555" width="88" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go Back">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goBackClick:" destination="NyM-Fk-oXW" eventType="touchUpInside" id="HZ9-PM-Fz4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HjV-9O-z2K"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="91t-Ah-Ypv" firstAttribute="top" secondItem="HjV-9O-z2K" secondAttribute="top" constant="100" id="DvB-py-OGh"/>
+                            <constraint firstItem="rjo-2j-4Wg" firstAttribute="leading" secondItem="HjV-9O-z2K" secondAttribute="leading" constant="100" id="Ita-Bq-bbo"/>
+                            <constraint firstItem="HjV-9O-z2K" firstAttribute="trailing" secondItem="91t-Ah-Ypv" secondAttribute="trailing" constant="80" id="KJc-MU-ICf"/>
+                            <constraint firstItem="rjo-2j-4Wg" firstAttribute="top" secondItem="sYg-Fo-KwJ" secondAttribute="bottom" constant="50" id="PoD-6J-Gox"/>
+                            <constraint firstItem="sYg-Fo-KwJ" firstAttribute="top" secondItem="91t-Ah-Ypv" secondAttribute="bottom" constant="50" id="mkR-uk-AQE"/>
+                            <constraint firstItem="sYg-Fo-KwJ" firstAttribute="leading" secondItem="HjV-9O-z2K" secondAttribute="leading" constant="60" id="oM9-V8-UT1"/>
+                            <constraint firstItem="HjV-9O-z2K" firstAttribute="trailing" secondItem="sYg-Fo-KwJ" secondAttribute="trailing" constant="60" id="sge-aj-tnb"/>
+                            <constraint firstItem="91t-Ah-Ypv" firstAttribute="leading" secondItem="HjV-9O-z2K" secondAttribute="leading" constant="80" id="tgu-Kv-peO"/>
+                            <constraint firstItem="HjV-9O-z2K" firstAttribute="trailing" secondItem="rjo-2j-4Wg" secondAttribute="trailing" constant="100" id="yg6-Jj-1I3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mE8-xI-s2D"/>
+                    <connections>
+                        <outlet property="secondMobileTf" destination="sYg-Fo-KwJ" id="N9W-se-chk"/>
+                        <outlet property="secondTitleL" destination="91t-Ah-Ypv" id="s5g-M8-OLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WnP-Qn-ZNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596.1832061068703" y="13.380281690140846"/>
+        </scene>
+        <!--OtpVC-->
+        <scene sceneID="aQt-zD-yRK">
+            <objects>
+                <viewController storyboardIdentifier="otpvc" id="cXo-kL-8wu" customClass="OtpVC" customModule="OTPApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sf3-Jx-GGe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP Sent to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4W-aS-nhv">
+                                <rect key="frame" x="100" y="159" width="393" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6 digit OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C24-uc-Mfu">
+                                <rect key="frame" x="120" y="315" width="153" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNX-AY-0Di">
+                                <rect key="frame" x="120" y="399" width="153" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Validate OTP"/>
+                                <connections>
+                                    <action selector="validOtpButton:" destination="cXo-kL-8wu" eventType="touchUpInside" id="jCz-9N-Gg1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YpS-PG-6BS"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="C24-uc-Mfu" firstAttribute="top" secondItem="V4W-aS-nhv" secondAttribute="bottom" constant="120" id="6q8-oa-Tfv"/>
+                            <constraint firstItem="V4W-aS-nhv" firstAttribute="leading" secondItem="YpS-PG-6BS" secondAttribute="leading" constant="100" id="JUs-g2-rtC"/>
+                            <constraint firstItem="GNX-AY-0Di" firstAttribute="top" secondItem="C24-uc-Mfu" secondAttribute="bottom" constant="50" id="Jak-QP-vrr"/>
+                            <constraint firstItem="V4W-aS-nhv" firstAttribute="top" secondItem="YpS-PG-6BS" secondAttribute="top" constant="100" id="b9w-xZ-6bN"/>
+                            <constraint firstItem="GNX-AY-0Di" firstAttribute="leading" secondItem="YpS-PG-6BS" secondAttribute="leading" constant="120" id="e7U-2h-pca"/>
+                            <constraint firstItem="YpS-PG-6BS" firstAttribute="trailing" secondItem="GNX-AY-0Di" secondAttribute="trailing" constant="120" id="gUV-Vz-dnv"/>
+                            <constraint firstItem="C24-uc-Mfu" firstAttribute="leading" secondItem="YpS-PG-6BS" secondAttribute="leading" constant="120" id="nvP-5A-wQA"/>
+                            <constraint firstItem="YpS-PG-6BS" firstAttribute="trailing" secondItem="C24-uc-Mfu" secondAttribute="trailing" constant="120" id="sEw-rX-4QH"/>
+                            <constraint firstAttribute="trailing" secondItem="V4W-aS-nhv" secondAttribute="trailing" constant="-100" id="ufV-vM-GAL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="otpTf" destination="C24-uc-Mfu" id="Z6G-G5-2ft"/>
+                        <outlet property="thirdtitleL" destination="V4W-aS-nhv" id="wDB-aO-7gL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFn-10-qYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3451.1450381679388" y="31.690140845070424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8oz-k9-3wu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ixm-kM-nhe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Olk-oV-qaR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Buf-rb-X6Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gET-tN-qWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34.351145038167935" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
